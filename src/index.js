@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Banniere from "./components/banniere/banniere";
 import Card from './components/card/card';
 import About from './components/about/about';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Footer from './components/Footer/footer';
+import Housing from './components/housing/housing';
 
 
 ReactDOM.render(
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Route path="/" element={<Card/>}></Route>
         <Route path="/index" element={<Card/>}></Route>
         <Route path="/about" element={<About/>}></Route>
+        <Route path="/housing/:id" element={<Housing/>}></Route>
       </Routes>
     </Router>
     

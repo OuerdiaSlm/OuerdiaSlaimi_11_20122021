@@ -1,0 +1,10 @@
+.global-housing{
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.housing{
+  width: 530px;
+  margin: auto;
+}
