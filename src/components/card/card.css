@@ -1,0 +1,39 @@
+.global-section-card{
+  max-width: 1240px;
+  margin: auto;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}
+
+.global-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card-cover{
+  height: 340px;
+  width: 340px;
+  left: 0px;
+  top: 0px;
+  border-radius: 10px;
+}
+
+.card-title{
+  margin-top: -60px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card{
+  margin: 30px;
+  height: 340px;
+  width: 340px;
+  left: 0px;
+  top: 0px;
+  border-radius: 10px;
+}

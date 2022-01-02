@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Banniere from "./components/banniere/banniere";
+import Card from './components/card/card';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Footer from './components/Footer/footer';
 
@@ -14,7 +15,8 @@ ReactDOM.render(
       
     <Router>
       <Routes>
-        
+        <Route path="/" element={<Card/>}></Route>
+        <Route path="/index" element={<Card/>}></Route>
       </Routes>
     </Router>
     
