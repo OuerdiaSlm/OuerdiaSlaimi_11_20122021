@@ -1,7 +1,6 @@
 import React from "react"
 import Banner from "../components/header/banner";
 import Card from "../components/card/card";
-import Header from "../components/header/header";
 import Footer from "../components/Footer/footer";
 
 class Home extends React.Component{
@@ -13,7 +12,6 @@ class Home extends React.Component{
           <Card/>
         </div>
         <Footer/>
-        
       </section>
     )
   }

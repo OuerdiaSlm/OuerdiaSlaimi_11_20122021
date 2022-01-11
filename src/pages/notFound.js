@@ -1,8 +1,5 @@
 import React from "react"
 import Error from "../components/error/error";
-import Header from "../components/header/header";
-
-
 
 class NotFound extends React.Component{
   render() {

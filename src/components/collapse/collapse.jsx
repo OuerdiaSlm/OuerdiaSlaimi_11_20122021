@@ -2,12 +2,6 @@ import React from "react"
 import './collapse.css';
 
 export default class Collapse extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
- 
-
   render() {
     return (
       <div className="global-div-collapse">
@@ -20,6 +14,6 @@ export default class Collapse extends React.Component {
           <p className="contents">{this.props.contents}</p>
         </details>            
       </div>
-  )
+    )
   }
 }

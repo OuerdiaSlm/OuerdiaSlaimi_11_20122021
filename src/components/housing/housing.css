@@ -34,14 +34,12 @@
   font-weight: 450;
 }
 
-
 .housing-details{
   width: 582px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   background-color: #F6F6F6;
-  
   justify-content: space-between;
 }
 
@@ -53,7 +51,6 @@
   justify-content: space-between;
 }
 .housing-details{
-  
   width: 100%;
 }
 
@@ -74,7 +71,6 @@
   color: #FF6060;
   font-weight: 450;
 }
-
 
 .global-section-tags{
   max-width: 1240px;
@@ -143,9 +139,9 @@
     display: flex;
     align-items: center;
   }
-.host-picture-name{
-  margin-bottom: 0px;
-}
+  .host-picture-name{
+    margin-bottom: 0px;
+  }
   /*rating*/
   .etoile{
     width: 15px;
@@ -161,6 +157,5 @@
   .host-name{
     font-size: 12px;
   }
-
-  }
+}
 

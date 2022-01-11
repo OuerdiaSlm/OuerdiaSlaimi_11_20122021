@@ -4,16 +4,6 @@ import logo from '../../images/logo.svg';
 import { Link } from "react-router-dom";
 
   class Header extends React.Component{
-  
-    constructor(props){
-      super(props)
-      
-    }
-    
-    handleClick(){
-    
-    }
-
     render() { 
       return (
         <div className="global-div-header">
@@ -29,11 +19,9 @@ import { Link } from "react-router-dom";
                 </Link>
               </ul>
             </div>
-            
           </header>
         </div>
-      );
+      )
     }
   }
-
   export default Header;

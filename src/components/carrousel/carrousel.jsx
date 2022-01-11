@@ -14,7 +14,6 @@ import logo from '../../images/arrow.png';
       this.lessSlide = this.lessSlide.bind(this);
 
       //Récupèration de l'Id
-      const param = new URLSearchParams(window.location.search);
       const idLocation = window.location.href.split("/");
       const idLength = idLocation.length;
       const idd = idLocation[idLength-1];
@@ -40,7 +39,6 @@ import logo from '../../images/arrow.png';
     }
 
     render() { 
-      
       return (
             <section className="global-section-carrousel">
                 {this.appartmentInfos[0].pictures.map((image, index) =>{
@@ -48,11 +46,11 @@ import logo from '../../images/arrow.png';
                     return(
                       <div className="testkan" key={image}>
                         {
-                          this.state.arrayIndex== index ?
+                          this.state.arrayIndex === index ?
                           <img src={image} alt="" className="carrousel-Img" />
                           : ""
                         }
-                      
+                 
                       {this.appartmentInfos[0].pictures.length > 1 ? 
                         <div>
                             <img className="carouselArrowLeft" onClick={this.lessSlide} src={logo} alt="arrow"/>
@@ -65,7 +63,6 @@ import logo from '../../images/arrow.png';
                         </p>
                       </div>
                     )
-                    
                     })}
             </section>
       );
