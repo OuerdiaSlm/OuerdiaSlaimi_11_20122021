@@ -15,6 +15,7 @@ class Rating extends React.Component{
     const appartmentInfos = data.filter( item =>
       item.id === this.recoveryId()
     )
+    
     const rating = appartmentInfos[0].rating
     let stars = []
     const max = 5;

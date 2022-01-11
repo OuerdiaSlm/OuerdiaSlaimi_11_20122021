@@ -13,8 +13,7 @@ import data from '../../data.json';
       const dataId = data.filter( item =>
         item.id === this.recoveryId()
       )
-
-      return (
+       return (
         <section className="global-section-tags">
           {dataId[0].tags.map((tag)=>{
             return(
