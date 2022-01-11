@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/home';
 import About from './pages/about';
 import Lodging from './pages/lodging';
+import NotFound from './pages/notFound';
 
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/about" element={<About/>}/>
         <Route exact path="/lodging/:id" element={<Lodging/>}/>
+        <Route path="/*" element={<NotFound/>}/>
       </Routes>
     </Router>
   </React.StrictMode>,
