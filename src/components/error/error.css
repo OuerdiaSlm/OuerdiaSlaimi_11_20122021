@@ -1,0 +1,43 @@
+.global-div-error{
+  max-width: 1240px;
+  margin: auto;
+}
+
+.error, .error-message, .redirect{
+  text-align: center;
+  color:#FF6060;
+  font-weight: 500;
+}
+.error{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 288px;
+  font-weight: 700;
+}
+
+.error-message{
+  font-size: 36px;
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+.redirect{
+  width: 260PX;
+  margin: auto;
+  font-size: 18px;
+  border-bottom: 1px solid;
+}
+
+@media screen and (max-width: 500px) {
+	.error{
+    font-size: 96px;
+  }
+  .error-message{
+    font-size: 18px;
+  }
+  .redirect{
+    max-width: 200px;
+    width: 100%;
+    font-size: 14px;
+  }
+}

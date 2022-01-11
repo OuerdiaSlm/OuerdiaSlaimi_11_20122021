@@ -1,23 +1,20 @@
-import React, {Fragment, useState, useEffect} from "react"
+import React from "react"
 import './housing.css';
 import data from '../../data.json';
+import Collapse from "../collapse/collapse";
 
   class HousingDetail extends React.Component{
     constructor(props){
       super(props);
-      
     }
     
     recoveryId(){
       const param = new URLSearchParams(window.location.search);
-      const vv = window.location.href.split("/");
-      const v = vv.length;
-      const idd = vv[v-1];
-      console.log(idd);
+      const idLocation = window.location.href.split("/");
+      const idLength = idLocation.length;
+      const idd = idLocation[idLength-1];
       const test = data.find((data) => data.id === idd);
-      console.log(test);
       return idd
-      
     }
     
     render() { 
@@ -25,27 +22,43 @@ import data from '../../data.json';
         item.id === this.recoveryId()
       )
       return (
-            <section className="global-section-housingDetail">
-              <div className="global-housing">
-                {dataId.map(item => (
-                  <div className="div-details" key={item.id}>
-                    <details className="details">
-                      <summary className="summary">
-                        {item.title}
-                        <i className="fas fa-chevron-down" id="chevron"></i>
-                      </summary>
-                      <p className="contents">{item.equipments}</p>
-                    </details>
-                  </div>
-                ))}
+        <div className="global-housingDetail">
+          {/* {console.log(dataId)} */}
+            {dataId.map(item => (
+              // <div className="div-housing-details" key={item.id}>
+              //   <details className="housing-details">
+              //     <summary className="summary">
+              //       Description
+              //       <i className="fas fa-chevron-down" id="chevron"></i>
+              //     </summary>
+              //     <p className="description">{item.description}</p>
+              //   </details>
+              // </div>
+              <Collapse key={`${item.title}`} title="Description" contents={item.description} />
+            ))}
 
+            {dataId.map(item => (
+              <div className="div-housing-details" key={item.id}>
+                <details className="housing-details">
+                  <summary className="summary">
+                  Équipements
+                    <i className="fas fa-chevron-down" id="chevron"></i>
+                  </summary>
+                  <div className="contents-equipment">
+                    {dataId[0].equipments.map((equipment)=>{
+                      return(
+                        <p className="equipment" key={equipment}>{equipment}</p>
+                      )
+                    })}
+                  </div>
+                </details>
               </div>
-            </section>
+            ))}
+
+        </div>
       );
     } 
-    
   }
-
   export default HousingDetail;
 
 

@@ -22,3 +22,16 @@
 .footer-content{
   font-size: 24px;
 }
+
+@media screen and (max-width: 830px) {
+
+  .footer-content{
+    font-size: 12px;
+  }
+
+  .footer-logo{
+    width: 100px;
+  }
+
+}
+

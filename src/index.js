@@ -1,32 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Banniere from "./components/banniere/banniere";
-import Card from './components/card/card';
-import About from './components/about/about';
-import Footer from './components/Footer/footer';
-import Housing from './components/housing/housing';
+import Header from "./components/header/header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './pages/home';
+import About from './pages/about';
+import Lodging from './pages/lodging';
 
 
 ReactDOM.render(
   <React.StrictMode>
-   
-    <Banniere />
-      
     <Router>
+    <Header/>
       <Routes>
-        <Route path="/" element={<Card/>}></Route>
-        <Route path="/index" element={<Card/>}></Route>
-        <Route path="/about" element={<About/>}></Route>
-        <Route path="/housing/:id" element={<Housing/>}></Route>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/about" element={<About/>}/>
+        <Route exact path="/lodging/:id" element={<Lodging/>}/>
       </Routes>
     </Router>
-    
-    <Footer/>
   </React.StrictMode>,
-
   
   document.getElementById("root")
 )

@@ -1,0 +1,58 @@
+.global-div-banner{
+  max-width: 1240px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.IMG-div{
+  max-width: 1240px;
+  width: 100%;
+  height: 223px;
+  background-image: url("../../images/fond.png"), url("../../images/IMG.jpg");
+  max-width: 1240px;
+    object-fit: cover;
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    /*  */
+}
+
+.backgroundIMG{
+  max-width: 1240px;
+  width: 100%;
+  height: 223px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  border-radius: 25px;
+}
+
+
+
+@media screen and (max-width: 878px) {
+	.IMG{
+    height: 111px;
+    border-radius: 10px;
+  }
+  .backgroundIMG{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+	.IMG{
+    height: 111px;
+    border-radius: 10px;
+  }
+ 
+  .backgroundIMG, .IMG-div{
+    font-size: 24px;
+    height: 111px;
+  }
+  .backgroundIMG{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}

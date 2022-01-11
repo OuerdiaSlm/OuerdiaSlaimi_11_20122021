@@ -1,61 +1,54 @@
-import React, {Fragment, useState, useEffect} from "react"
+import React from "react"
 import './housing.css';
 import data from '../../data.json';
+import Rating from "./rating";
 
   class Housing extends React.Component{
     constructor(props){
       super(props);
-      
+      this.state = {
+        error: null,
+      }
     }
     
     recoveryId(){
       const param = new URLSearchParams(window.location.search);
-      const vv = window.location.href.split("/");
-      const v = vv.length;
-      const idd = vv[v-1];
-      console.log(idd);
+      const idLocation = window.location.href.split("/");
+      const idLength = idLocation.length;
+      const idd = idLocation[idLength-1];
       const test = data.find((data) => data.id === idd);
-      console.log(test);
       return idd
-      
     }
     
     render() { 
       const dataId = data.filter( item =>
         item.id === this.recoveryId()
       )
+      
+      
       return (
             <section className="global-section-housing">
               <div className="global-housing">
                 {dataId.map((item) => (
                   <div className="housing" key={item.id}>
-                    <p className="housing-title">{item.title}</p>
-                    <p className="housing-location">{item.location}</p>
-                    <p className="housing-tags">{item.tags+" "}</p>
+                    
+                    <h1 className="housing-title">{item.title}</h1>
+                    <h2 className="housing-location">{item.location}</h2>
                   </div>
                 ))}
-
-                {dataId.map((item) => (
-                  <div className="housing" key={item.id}>
-                    <p className="housing-title">{item.host.name}</p>
-                    <img src={item.host.picture} className="" alt="" />
+                <div className="name-rating">
+                  {dataId.map((item) => (
+                  <div className="host-picture-name" key={item.id}>
+                    <h3 className="host-name">{item.host.name}</h3>
+                    <img src={item.host.picture} className="host-picture" alt="" />
                   </div>
                 ))}
-
-                {dataId.map(item => (
-                  <div className="div-details" key={item.id}>
-                    <details className="details">
-                      <summary className="summary">
-                        Description
-                        <i className="fas fa-chevron-down" id="chevron"></i>
-                      </summary>
-                      <p className="contents">{item.description}</p>
-                    </details>
-                  </div>
-                ))}
+                <Rating/>
+                </div>
               </div>
             </section>
       );
+      
     } 
     
   }

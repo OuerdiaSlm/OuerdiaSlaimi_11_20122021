@@ -1,10 +1,166 @@
+.global-section-housing{
+  margin-top: 15px;
+}
 .global-housing{
   max-width: 1240px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-.housing{
-  width: 530px;
+
+.host-picture-name{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 15px;
+}
+
+.housing-title{
+  font-size: 36px;
+  color: #FF6060;
+  font-weight: 450;
+  margin: 0px;
+}
+
+.housing-location{
+  font-size: 18px;
+  color: #FF6060;
+  font-weight: 450;
+}
+
+.housing-tags{
+  font-size: 14px;
+  color: #FF6060;
+  font-weight: 450;
+}
+
+
+.housing-details{
+  width: 582px;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F6F6F6;
+  
+  justify-content: space-between;
 }
+
+.global-housingDetail{
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.housing-details{
+  
+  width: 100%;
+}
+
+.global-housingDetail .global-div-collapse, .div-housing-details{
+  width: 582px;
+  margin-bottom: 25px;
+}
+
+.host-picture{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.host-name{
+  width: 93px;
+  font-size: 16px;
+  color: #FF6060;
+  font-weight: 450;
+}
+
+
+.global-section-tags{
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-tags{
+  display: flex;
+}
+
+.housing-tags{
+  background-color: #FF6060;
+  color: white;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.contents-equipment, .description{
+  padding: 20px;
+  color: #FF6060;
+  font-size: 18px;
+}
+.equipment, .description{
+  margin: 3px;
+}
+
+
+#chevron::after {
+  background-color: blueviolet;
+}
+
+/* Rating */
+.apartmentHostRating span{
+  margin-left: 10px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 830px) {
+  .housing-title {
+    font-size: 18px;
+    color: #FF6060;
+    font-weight: 450;
+    margin: 0px;
+  }
+  .housing-location{
+    font-size: 14px;
+  }
+  .housing-tags{
+    font-size: 10px;
+  }
+  .global-housing {
+    display: block;
+  }
+  .name-rating{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: inherit;
+  }
+  .apartmentHostRating{
+    display: flex;
+    align-items: center;
+  }
+.host-picture-name{
+  margin-bottom: 0px;
+}
+  /*rating*/
+  .etoile{
+    width: 15px;
+  }
+  .apartmentHostRating span {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .host-picture{
+    width: 32px;
+    height: 32px;
+  }
+  .host-name{
+    font-size: 12px;
+  }
+
+  }
+

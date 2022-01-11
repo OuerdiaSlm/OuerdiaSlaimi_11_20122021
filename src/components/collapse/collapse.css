@@ -1,20 +1,14 @@
-.global-section-about{
-  max-width: 1240px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.div-details{
-  width: 1023px;
+
+.global-div-collapse{
   margin-bottom: 20px;
 }
+
 .summary{
   border-radius: 5px;
   background-color: #FF6060;
   padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: white;
   list-style: none;
 
@@ -22,15 +16,12 @@
   justify-content: space-between;
   
   font-size: 24px;
-  font-weight: 450;
+  font-weight: 500;
   text-align: left;
-
 }
 
-
-
 .details {
-  max-width: 1023px;
+  width: 100%;
   border-radius: 5px;
   background-color: #F6F6F6;
 }
@@ -40,4 +31,14 @@
   padding-top: 0px;
   color: #FF6060;
   font-size: 24px;
+}
+
+
+@media screen and (max-width: 500px) {
+	.summary{
+		font-size: 13px;
+	}
+  .contents{
+    font-size: 12px;
+  }
 }
