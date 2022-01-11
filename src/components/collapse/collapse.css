@@ -11,13 +11,20 @@
   padding-right: 10px;
   color: white;
   list-style: none;
-
   display: flex;
   justify-content: space-between;
-  
   font-size: 24px;
   font-weight: 500;
   text-align: left;
+}
+
+#chevron{
+  margin-top: 5px;
+}
+
+details[open] #chevron {
+  transform: rotate( 180deg);
+  margin-bottom: 5px;
 }
 
 .details {

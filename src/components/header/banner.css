@@ -9,11 +9,10 @@
   height: 223px;
   background-image: url("../../images/fond.png"), url("../../images/IMG.jpg");
   max-width: 1240px;
-    object-fit: cover;
-    height: 223px;
-    width: 100%;
-    border-radius: 25px;
-    /*  */
+  object-fit: cover;
+  height: 223px;
+  width: 100%;
+  border-radius: 25px;
 }
 
 .backgroundIMG{

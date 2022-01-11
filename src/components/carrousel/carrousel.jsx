@@ -1,7 +1,7 @@
 import React from "react"
 import './carrousel.css';
 import data from '../../data.json';
-import logo from '../../images/arrow.png'; 
+import arrow from '../../images/arrow.png'; 
 
   class Carrousel extends React.Component{
     constructor(props) {
@@ -53,8 +53,8 @@ import logo from '../../images/arrow.png';
                  
                       {this.appartmentInfos[0].pictures.length > 1 ? 
                         <div>
-                            <img className="carouselArrowLeft" onClick={this.lessSlide} src={logo} alt="arrow"/>
-                            <img className="carouselArrowRight" onClick={this.plusSlide} src={logo} alt="arrow"/>    
+                            <img className="carouselArrowLeft" onClick={this.lessSlide} src={arrow} alt="arrow"/>
+                            <img className="carouselArrowRight" onClick={this.plusSlide} src={arrow} alt="arrow"/>    
                           </div> 
                         : ""
                         }
