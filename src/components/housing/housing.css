@@ -11,7 +11,7 @@
 
 .host-picture-name{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-bottom: 15px;
 }
 
@@ -55,7 +55,8 @@
 }
 
 .global-housingDetail .global-div-collapse, .div-housing-details{
-  width: 582px;
+  max-width: 582px;
+  width: 100%;
   margin-bottom: 25px;
 }
 
@@ -148,7 +149,7 @@
   }
   .apartmentHostRating span {
     margin-left: 0px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .host-picture{
     width: 32px;
