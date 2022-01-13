@@ -21,13 +21,12 @@ class Lodging extends React.Component{
     this.appartmentInfos = appartmentInfos;
 } 
   render() { 
-    if(this.appartmentInfos.length == 0){
+    if(this.appartmentInfos.length === 0){
       return (
         <NotFound/>
       )
     }
       return (
-        
         <section >
           <div className="all-components-without-footer">
             <Carrousel/>
@@ -36,12 +35,8 @@ class Lodging extends React.Component{
             <HousingDetail/>
           </div>
           <Footer/>
-          {/* <Routes>
-            <Route path="/*" element={<NotFound/>}/>
-          </Routes>           */}
         </section>
     ) 
-    
   }
 }
 export default Lodging;

@@ -1,6 +1,5 @@
 import React from "react"
 import './collapse.css';
-import arrow from '../../images/arrow.png'; 
 
 export default class Collapse extends React.Component {
   render() {
