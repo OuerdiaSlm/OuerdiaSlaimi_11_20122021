@@ -25,12 +25,10 @@ import arrow from '../../images/arrow.png';
   } 
 
     plusSlide(){
-      this.appartmentInfos[0].pictures.map((image) =>{
-      
       this.state.arrayIndex >= this.appartmentInfos[0].pictures.length -1 
       ? this.setState({ arrayIndex: 0 })
       : this.setState({ arrayIndex: this.state.arrayIndex + 1 })
-      })
+      
     }
     lessSlide(){
         this.state.arrayIndex === 0
